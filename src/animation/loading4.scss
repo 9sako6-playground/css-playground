@@ -1,0 +1,40 @@
+#loading4 {
+  width: 54px;
+  height: 54px;
+  border: 5px solid transparent;
+  border-top-color: aquamarine;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+}
+
+#loading4:before,
+#loading4:after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  content: '';
+  border: 3px solid transparent;
+  border-top-color: aquamarine;
+  border-radius: 50%;
+  animation: rotation 4s linear infinite;
+}
+
+#loading4:before {
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  animation: rotation 8s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
