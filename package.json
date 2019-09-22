@@ -1,0 +1,29 @@
+{
+  "name": "css-playground",
+  "version": "1.0.0",
+  "description": "css animation playground",
+  "main": "index.js",
+  "repository": "https://github.com/9sako6/css-playground",
+  "author": "9sako6",
+  "license": "MIT",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --mode development",
+    "build": "./node_modules/.bin/webpack --mode production"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.1.2",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

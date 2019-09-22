@@ -1,0 +1,68 @@
+#loader1 {
+  width: 256px;
+  height: 256px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .sq1 {
+    width: 25%;
+    height: 25%;
+    background-color: aquamarine;
+    animation: rotation 1s linear 0s infinite normal none running;
+  }
+
+  .sq2 {
+    width: 25%;
+    height: 25%;
+    background-color: rosybrown;
+    animation: rotation 1s linear 0s infinite normal none running;
+  }
+
+  .sq3 {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(202, 255, 117);
+    animation: rotation 1s linear 0s infinite normal none running;
+  }
+
+  .sq4 {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(247, 139, 220);
+    animation: rotation 1s linear 0s infinite normal none running;
+  }
+  .sq4-mad {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(247, 139, 220);
+    animation: rotation2 1s linear 0s 1 alternate forwards running;
+  }
+}
+
+@keyframes rotation {
+  0% {}
+
+  50% {
+    transform: scale(.5);
+  }
+
+  100% {
+    transform: scale(1) rotate(-360deg);
+  }
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(-360deg);
+  }
+  50% {
+    transform: scale(.5) rotate(360deg) translateY(50px);
+  }
+
+  100% {
+    transform: scale(1) rotate(-360deg) translateX(200px) translateY(100px);
+  }
+}
